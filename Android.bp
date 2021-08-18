@@ -6,6 +6,17 @@ soong_namespace {
 }
 
 android_app_import {
+	name: "ImsService",
+	owner: "teracube",
+	apk: "proprietary/priv-app/ImsService/ImsService.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+}
+
+android_app_import {
 	name: "EmCamera",
 	owner: "teracube",
 	apk: "proprietary/vendor/app/EmCamera/EmCamera.apk",
@@ -31,5 +42,31 @@ dex_import {
 	name: "com.st.android.nfc_extensions",
 	owner: "teracube",
 	jars: ["proprietary/framework/com.st.android.nfc_extensions.jar"],
+}
+
+dex_import {
+	name: "mediatek-common",
+	owner: "teracube",
+	jars: ["proprietary/framework/mediatek-common.jar"],
+}
+
+dex_import {
+	name: "mediatek-framework",
+	owner: "teracube",
+	jars: ["proprietary/framework/mediatek-framework.jar"],
+}
+
+dex_import {
+	name: "mediatek-ims-base",
+	owner: "teracube",
+	jars: ["proprietary/framework/mediatek-ims-base.jar"],
+}
+
+cc_prebuilt_binary {
+	name: "vtservice",
+	owner: "teracube",
+	srcs: ["proprietary/bin/vtservice"],
+	check_elf_files: false,
+	prefer: true,
 }
 

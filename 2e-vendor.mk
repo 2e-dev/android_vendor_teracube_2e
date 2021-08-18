@@ -6,20 +6,29 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/teracube/2e
 
 PRODUCT_COPY_FILES += \
-    vendor/teracube/2e/proprietary/bin/vtservice:$(TARGET_COPY_OUT_SYSTEM)/bin/vtservice \
     vendor/teracube/2e/proprietary/etc/bluetooth/mtk_bt_fw.conf:$(TARGET_COPY_OUT_SYSTEM)/etc/bluetooth/mtk_bt_fw.conf \
     vendor/teracube/2e/proprietary/etc/bluetooth/mtk_bt_stack.conf:$(TARGET_COPY_OUT_SYSTEM)/etc/bluetooth/mtk_bt_stack.conf \
     vendor/teracube/2e/proprietary/etc/init/init.vtservice.rc:$(TARGET_COPY_OUT_SYSTEM)/etc/init/init.vtservice.rc \
     vendor/teracube/2e/proprietary/etc/nfcee_access.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/nfcee_access.xml \
-    vendor/teracube/2e/proprietary/etc/permissions/com.mediatek.wfo.legacy.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.mediatek.wfo.legacy.xml \
     vendor/teracube/2e/proprietary/etc/permissions/com.st.android.nfc_extensions.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.st.android.nfc_extensions.xml \
-    vendor/teracube/2e/proprietary/framework/mediatek-wfo-legacy.jar:$(TARGET_COPY_OUT_SYSTEM)/framework/mediatek-wfo-legacy.jar \
     vendor/teracube/2e/proprietary/lib/libcomutils.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libcomutils.so \
+    vendor/teracube/2e/proprietary/lib/libimsma.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libimsma.so \
+    vendor/teracube/2e/proprietary/lib/libimsma_adapt.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libimsma_adapt.so \
+    vendor/teracube/2e/proprietary/lib/libimsma_rtp.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libimsma_rtp.so \
+    vendor/teracube/2e/proprietary/lib/libimsma_socketwrapper.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libimsma_socketwrapper.so \
+    vendor/teracube/2e/proprietary/lib/libmtk_vt_service.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libmtk_vt_service.so \
+    vendor/teracube/2e/proprietary/lib/libmtk_vt_wrapper.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libmtk_vt_wrapper.so \
     vendor/teracube/2e/proprietary/lib/libmtkaudio_utils.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libmtkaudio_utils.so \
     vendor/teracube/2e/proprietary/lib/libmtkavenhancements.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libmtkavenhancements.so \
     vendor/teracube/2e/proprietary/lib/libmtklimiter.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libmtklimiter.so \
     vendor/teracube/2e/proprietary/lib/libmtkperf_client.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libmtkperf_client.so \
     vendor/teracube/2e/proprietary/lib/libmtkshifter.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libmtkshifter.so \
+    vendor/teracube/2e/proprietary/lib/libsignal.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libsignal.so \
+    vendor/teracube/2e/proprietary/lib/libsink.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libsink.so \
+    vendor/teracube/2e/proprietary/lib/libsource.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libsource.so \
+    vendor/teracube/2e/proprietary/lib/libvcodec_cap.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libvcodec_cap.so \
+    vendor/teracube/2e/proprietary/lib/libvcodec_capenc.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libvcodec_capenc.so \
+    vendor/teracube/2e/proprietary/lib/libvt_avsync.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libvt_avsync.so \
     vendor/teracube/2e/proprietary/lib/vendor.mediatek.hardware.audio@5.1.so:$(TARGET_COPY_OUT_SYSTEM)/lib/vendor.mediatek.hardware.audio@5.1.so \
     vendor/teracube/2e/proprietary/lib/vendor.mediatek.hardware.camera.device@1.1.so:$(TARGET_COPY_OUT_SYSTEM)/lib/vendor.mediatek.hardware.camera.device@1.1.so \
     vendor/teracube/2e/proprietary/lib/vendor.mediatek.hardware.dfps@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib/vendor.mediatek.hardware.dfps@1.0.so \
@@ -38,6 +47,7 @@ PRODUCT_COPY_FILES += \
     vendor/teracube/2e/proprietary/lib/vendor.mediatek.hardware.pq@2.1.so:$(TARGET_COPY_OUT_SYSTEM)/lib/vendor.mediatek.hardware.pq@2.1.so \
     vendor/teracube/2e/proprietary/lib/vendor.mediatek.hardware.pq@2.2.so:$(TARGET_COPY_OUT_SYSTEM)/lib/vendor.mediatek.hardware.pq@2.2.so \
     vendor/teracube/2e/proprietary/lib/vendor.mediatek.hardware.pq@2.3.so:$(TARGET_COPY_OUT_SYSTEM)/lib/vendor.mediatek.hardware.pq@2.3.so \
+    vendor/teracube/2e/proprietary/lib/vendor.mediatek.hardware.videotelephony@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib/vendor.mediatek.hardware.videotelephony@1.0.so \
     vendor/teracube/2e/proprietary/lib/vendor.microtrust.hardware.tface@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib/vendor.microtrust.hardware.tface@1.0.so \
     vendor/teracube/2e/proprietary/lib/vendor.trustonic.teeregistry@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib/vendor.trustonic.teeregistry@1.0.so \
     vendor/teracube/2e/proprietary/lib64/libaptXHD_encoder.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libaptXHD_encoder.so \
@@ -49,6 +59,8 @@ PRODUCT_COPY_FILES += \
     vendor/teracube/2e/proprietary/lib64/libmtklimiter.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libmtklimiter.so \
     vendor/teracube/2e/proprietary/lib64/libmtkperf_client.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libmtkperf_client.so \
     vendor/teracube/2e/proprietary/lib64/libmtkshifter.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libmtkshifter.so \
+    vendor/teracube/2e/proprietary/lib64/libvcodec_cap.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libvcodec_cap.so \
+    vendor/teracube/2e/proprietary/lib64/libvcodec_capenc.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libvcodec_capenc.so \
     vendor/teracube/2e/proprietary/lib64/vendor.mediatek.hardware.audio@5.1.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/vendor.mediatek.hardware.audio@5.1.so \
     vendor/teracube/2e/proprietary/lib64/vendor.mediatek.hardware.camera.device@1.1.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/vendor.mediatek.hardware.camera.device@1.1.so \
     vendor/teracube/2e/proprietary/lib64/vendor.mediatek.hardware.dfps@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/vendor.mediatek.hardware.dfps@1.0.so \
@@ -69,6 +81,7 @@ PRODUCT_COPY_FILES += \
     vendor/teracube/2e/proprietary/lib64/vendor.mediatek.hardware.pq@2.1.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/vendor.mediatek.hardware.pq@2.1.so \
     vendor/teracube/2e/proprietary/lib64/vendor.mediatek.hardware.pq@2.2.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/vendor.mediatek.hardware.pq@2.2.so \
     vendor/teracube/2e/proprietary/lib64/vendor.mediatek.hardware.pq@2.3.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/vendor.mediatek.hardware.pq@2.3.so \
+    vendor/teracube/2e/proprietary/lib64/vendor.mediatek.hardware.videotelephony@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/vendor.mediatek.hardware.videotelephony@1.0.so \
     vendor/teracube/2e/proprietary/lib64/vendor.microtrust.hardware.tface@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/vendor.microtrust.hardware.tface@1.0.so \
     vendor/teracube/2e/proprietary/lib64/vendor.trustonic.teeregistry@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/vendor.trustonic.teeregistry@1.0.so \
     vendor/teracube/2e/proprietary/vendor/app/EmCamera/lib/arm64/libem_camera_jni.so:$(TARGET_COPY_OUT_VENDOR)/app/EmCamera/lib/arm64/libem_camera_jni.so \
@@ -1227,6 +1240,11 @@ PRODUCT_COPY_FILES += \
     vendor/teracube/2e/proprietary/vendor/thh/ta/bd038be8f6724256887c1fa734524012.ta:$(TARGET_COPY_OUT_VENDOR)/thh/ta/bd038be8f6724256887c1fa734524012.ta
 
 PRODUCT_PACKAGES += \
+    ImsService \
     EmCamera \
     SensorHub \
-    com.st.android.nfc_extensions
+    com.st.android.nfc_extensions \
+    mediatek-common \
+    mediatek-framework \
+    mediatek-ims-base \
+    vtservice
