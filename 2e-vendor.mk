@@ -633,6 +633,7 @@ PRODUCT_COPY_FILES += \
     vendor/teracube/2e/proprietary/vendor/lib/hw/vendor.mediatek.hardware.pq@2.3-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.mediatek.hardware.pq@2.3-impl.so \
     vendor/teracube/2e/proprietary/vendor/lib/hw/vendor.mediatek.hardware.videotelephony@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.mediatek.hardware.videotelephony@1.0-impl.so \
     vendor/teracube/2e/proprietary/vendor/lib/hw/vibrator.default.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vibrator.default.so \
+    vendor/teracube/2e/proprietary/vendor/lib/hw/vulkan.mt6765.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vulkan.mt6765.so \
     vendor/teracube/2e/proprietary/vendor/lib/imx134_2lane_mipi_raw_tuning.so:$(TARGET_COPY_OUT_VENDOR)/lib/imx134_2lane_mipi_raw_tuning.so \
     vendor/teracube/2e/proprietary/vendor/lib/imx134_mipi_raw_tuning.so:$(TARGET_COPY_OUT_VENDOR)/lib/imx134_mipi_raw_tuning.so \
     vendor/teracube/2e/proprietary/vendor/lib/imx214_mipi_raw_tuning.so:$(TARGET_COPY_OUT_VENDOR)/lib/imx214_mipi_raw_tuning.so \
@@ -872,6 +873,7 @@ PRODUCT_COPY_FILES += \
     vendor/teracube/2e/proprietary/vendor/lib64/hw/vendor.mediatek.hardware.pq@2.3-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.mediatek.hardware.pq@2.3-impl.so \
     vendor/teracube/2e/proprietary/vendor/lib64/hw/vendor.mediatek.hardware.videotelephony@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.mediatek.hardware.videotelephony@1.0-impl.so \
     vendor/teracube/2e/proprietary/vendor/lib64/hw/vibrator.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vibrator.default.so \
+    vendor/teracube/2e/proprietary/vendor/lib64/hw/vulkan.mt6765.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vulkan.mt6765.so \
     vendor/teracube/2e/proprietary/vendor/lib64/imx134_2lane_mipi_raw_IdxMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/imx134_2lane_mipi_raw_IdxMgr.so \
     vendor/teracube/2e/proprietary/vendor/lib64/imx134_2lane_mipi_raw_tuning.so:$(TARGET_COPY_OUT_VENDOR)/lib64/imx134_2lane_mipi_raw_tuning.so \
     vendor/teracube/2e/proprietary/vendor/lib64/imx134_mipi_raw_IdxMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/imx134_mipi_raw_IdxMgr.so \
